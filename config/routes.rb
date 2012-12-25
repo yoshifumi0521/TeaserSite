@@ -1,6 +1,8 @@
 #coding: utf-8
 TeaserSite::Application.routes.draw do
  
+  resources :users,only: [:create]
+
   #パターンのルーティング
   get "register/1",:controller => :registers, :action => :pattern1
   get "register/2",:controller => :registers, :action => :pattern2

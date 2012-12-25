@@ -7,6 +7,7 @@ class RegistersController < ApplicationController
   def pattern1
 
     @pattern = 1
+    @user = User.new(:pattern_id => @pattern)
 
     #index.htmlをレンダリング
     render "index"
@@ -18,7 +19,7 @@ class RegistersController < ApplicationController
   def pattern2
 
     @pattern = 2
-
+    @user = User.new(:pattern_id => @pattern)
 
     #index.htmlをレンダリング
     render "index"
@@ -30,7 +31,7 @@ class RegistersController < ApplicationController
   def pattern3
 
     @pattern = 3
-
+    @user = User.new(:pattern_id => @pattern)
 
     #index.htmlをレンダリング
     render "index"
@@ -42,7 +43,7 @@ class RegistersController < ApplicationController
   def pattern4
 
     @pattern = 4
-
+    @user = User.new(:pattern_id => @pattern)
 
     #index.htmlをレンダリング
     render "index"
@@ -54,7 +55,7 @@ class RegistersController < ApplicationController
   def pattern5
 
     @pattern = 5
-
+    @user = User.new(:pattern_id => @pattern)
 
     #index.htmlをレンダリング
     render "index"

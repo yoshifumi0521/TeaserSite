@@ -1,51 +1,56 @@
 
-<h1>ティザーサイト</h1>
+<div data-role="content">
+  
+  <h1>ティザーサイト</h1>
 
 
-<!-- ここでパターンごとに画像をかえる。 -->
+  <!-- ここでパターンごとに画像をかえる。 -->
 
-<!--パターン1 -->
-<% if @pattern == 1 %>
+  <!--パターン1 -->
+  <% if @pattern == 1 %>
 
-  <h1>画像1</h1>
+    <h1>画像1</h1>
+
+  <!--パターン2 -->
+  <% elsif @pattern == 2 %>
+
+    <h1>画像2</h1>
+
+  <!--パターン3 -->
+  <% elsif @pattern == 3 %>
+
+    <h1>画像3</h1>
+
+  <!--パターン4 -->
+  <% elsif @pattern == 4 %>
+
+    <h1>画像4</h1>
+
+  <!--パターン5 -->
+  <% elsif @pattern == 5 %>
+
+    <h1>画像5</h1>
+
+  <% end %>
+
+  <!-- フォーム -->
+  <%= form_for @user  do |form| %>
+
+    <!-- パターンをhiddenで送る。 -->
+    <input type="hidden" name="pattern" value="<%= @pattern %>">
+
+    <%= form.label :answer,"質問に対する回答" %>
+    <%= form.text_area :answer %>
+  
+    <%= form.label :email,"メールアドレス" %>
+    <%= form.text_field :email %>
+
+    <!-- ここにラジオボックスがはいるかも -->
 
 
-<!--パターン2 -->
-<% elsif @pattern == 2 %>
+    <%= form.submit "送信" %>
 
-
-  <h1>画像2</h1>
-
-
-
-<!--パターン3 -->
-<% elsif @pattern == 3 %>
-
-
-
-  <h1>画像3</h1>
-
-
-
-<!--パターン4 -->
-<% elsif @pattern == 4 %>
-
-
-  <h1>画像4</h1>
-
-
-
-<!--パターン5 -->
-<% elsif @pattern == 5 %>
-
-
-  <h1>画像5</h1>
-
-
-<% end %>
-
-
-
+  <% end %>
 
 
 
