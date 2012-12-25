@@ -4,7 +4,7 @@ class RegistersController < ApplicationController
   #パターン1のアクション  
   def pattern1
 
-
+    @pattern = 1
 
 
 
@@ -15,6 +15,7 @@ class RegistersController < ApplicationController
   #パターン2のアクション
   def pattern2
 
+    @pattern = 2
 
 
 
@@ -24,6 +25,7 @@ class RegistersController < ApplicationController
   #パターン3のアクション
   def pattern3
 
+    @pattern = 3
 
 
 
@@ -34,6 +36,7 @@ class RegistersController < ApplicationController
   #パターン4のアクション
   def pattern4
 
+    @pattern = 4
 
 
 
@@ -44,6 +47,7 @@ class RegistersController < ApplicationController
   #パターン5のアクション
   def pattern5
 
+    @pattern = 5
 
 
 
@@ -52,8 +56,9 @@ class RegistersController < ApplicationController
 
 
   #パターン6のアクション
-  def pattern5
+  def pattern6
 
+    @pattern = 6
 
 
 
@@ -64,6 +69,7 @@ class RegistersController < ApplicationController
   #パターン7のアクション
   def pattern7
 
+    @pattern = 7
 
 
 
@@ -77,6 +83,7 @@ class RegistersController < ApplicationController
   #パターン8のアクション
   def pattern8
 
+    @pattern = 8
 
 
 
@@ -88,6 +95,7 @@ class RegistersController < ApplicationController
   #パターン9のアクション
   def pattern9
 
+    @pattern = 9
 
 
 
@@ -99,6 +107,7 @@ class RegistersController < ApplicationController
   #パターン10のアクション
   def pattern10
 
+    @pattern = 10
 
 
 
