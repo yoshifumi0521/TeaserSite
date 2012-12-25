@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   validates :name, :presence => true 
   validates :answer, :presence => true
-  validates :email, :presence => true,  :uniqueness => true
+  validates :email, :presence => true, :uniqueness => true,:email_format => {:message => 'メールアドレスが正しくありません。'}
 
 
 
