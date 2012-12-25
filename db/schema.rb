@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121225071316) do
+ActiveRecord::Schema.define(:version => 20121225132120) do
 
   create_table "patterns", :force => true do |t|
     t.string   "question",   :null => false
@@ -19,5 +19,16 @@ ActiveRecord::Schema.define(:version => 20121225071316) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "users", :force => true do |t|
+    t.string   "name",       :null => false
+    t.integer  "pattern_id"
+    t.string   "answer",     :null => false
+    t.string   "email",      :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "users", ["pattern_id"], :name => "index_users_on_pattern_id"
 
 end
