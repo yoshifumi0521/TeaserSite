@@ -6,8 +6,8 @@ class RegistersController < ApplicationController
 
     @pattern = 1
 
-
-
+    #index.htmlをレンダリング
+    render "index"
 
   end
 
@@ -18,6 +18,8 @@ class RegistersController < ApplicationController
     @pattern = 2
 
 
+    #index.htmlをレンダリング
+    render "index"
 
   end
 
@@ -28,6 +30,8 @@ class RegistersController < ApplicationController
     @pattern = 3
 
 
+    #index.htmlをレンダリング
+    render "index"
 
 
   end
@@ -39,6 +43,8 @@ class RegistersController < ApplicationController
     @pattern = 4
 
 
+    #index.htmlをレンダリング
+    render "index"
 
 
   end
@@ -50,6 +56,8 @@ class RegistersController < ApplicationController
     @pattern = 5
 
 
+    #index.htmlをレンダリング
+    render "index"
 
 
   end
@@ -61,6 +69,8 @@ class RegistersController < ApplicationController
     @pattern = 6
 
 
+    #index.htmlをレンダリング
+    render "index"
 
 
   end
@@ -72,6 +82,8 @@ class RegistersController < ApplicationController
     @pattern = 7
 
 
+    #index.htmlをレンダリング
+    render "index"
 
 
 
@@ -86,6 +98,8 @@ class RegistersController < ApplicationController
     @pattern = 8
 
 
+    #index.htmlをレンダリング
+    render "index"
 
 
   end
@@ -98,6 +112,8 @@ class RegistersController < ApplicationController
     @pattern = 9
 
 
+    #index.htmlをレンダリング
+    render "index"
 
 
   end
@@ -110,6 +126,8 @@ class RegistersController < ApplicationController
     @pattern = 10
 
 
+    #index.htmlをレンダリング
+    render "index"
 
 
   end
