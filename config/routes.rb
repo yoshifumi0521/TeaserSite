@@ -1,22 +1,17 @@
 #coding: utf-8
 TeaserSite::Application.routes.draw do
  
-  
-  resources :registers,only: [] do
-
-    collection do
-      #パターン1のルーティング
-      get "pattern1"
-
-
-
-
-    end
-
-  end
-
-  #パターン1のルーティング
+  #パターンのルーティング
   get "1",:controller => :registers, :action => :pattern1
+  get "2",:controller => :registers, :action => :pattern2
+  get "3",:controller => :registers, :action => :pattern3
+  get "4",:controller => :registers, :action => :pattern4
+  get "5",:controller => :registers, :action => :pattern5
+  get "6",:controller => :registers, :action => :pattern6
+  get "7",:controller => :registers, :action => :pattern7
+  get "8",:controller => :registers, :action => :pattern8
+  get "9",:controller => :registers, :action => :pattern9
+  get "10",:controller => :registers, :action => :pattern10
 
 
 
