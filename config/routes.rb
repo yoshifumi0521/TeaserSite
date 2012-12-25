@@ -2,19 +2,11 @@
 TeaserSite::Application.routes.draw do
  
   #パターンのルーティング
-  get "1",:controller => :registers, :action => :pattern1
-  get "2",:controller => :registers, :action => :pattern2
-  get "3",:controller => :registers, :action => :pattern3
-  get "4",:controller => :registers, :action => :pattern4
-  get "5",:controller => :registers, :action => :pattern5
-  get "6",:controller => :registers, :action => :pattern6
-  get "7",:controller => :registers, :action => :pattern7
-  get "8",:controller => :registers, :action => :pattern8
-  get "9",:controller => :registers, :action => :pattern9
-  get "10",:controller => :registers, :action => :pattern10
-
-
-
+  get "register/1",:controller => :registers, :action => :pattern1
+  get "register/2",:controller => :registers, :action => :pattern2
+  get "register/3",:controller => :registers, :action => :pattern3
+  get "register/4",:controller => :registers, :action => :pattern4
+  get "register/5",:controller => :registers, :action => :pattern5
   
 
   # The priority is based upon order of creation:
