@@ -1,6 +1,8 @@
 #coding: utf-8
 class RegistersController < ApplicationController
-  
+
+
+
   #パターン1のアクション  
   def pattern1
 
@@ -33,7 +35,6 @@ class RegistersController < ApplicationController
     #index.htmlをレンダリング
     render "index"
 
-
   end
 
 
@@ -46,7 +47,6 @@ class RegistersController < ApplicationController
     #index.htmlをレンダリング
     render "index"
 
-
   end
 
 
@@ -58,7 +58,6 @@ class RegistersController < ApplicationController
 
     #index.htmlをレンダリング
     render "index"
-
 
   end
 
