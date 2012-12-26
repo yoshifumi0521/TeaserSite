@@ -1,6 +1,7 @@
 #coding: utf-8
 TeaserSite::Application.routes.draw do
  
+
   resources :users,only: [:create]
 
   #パターンのルーティング
@@ -17,6 +18,8 @@ TeaserSite::Application.routes.draw do
     put "login/logout"
 
     resources :top,only: [:index]
+
+    resources :patterns,only: [:index,:show]
 
   end
 

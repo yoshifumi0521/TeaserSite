@@ -7,10 +7,22 @@
   <p><%= link_to "ログアウト",admin_login_logout_path,:method => :put %></p>
 
 
+  <!-- ボタンを並べる。 -->
+  <ul data-role="listview">
+    
+    <% @patterns.each do |pattern| %>
+      
+      <li>
+        <a href="patterns/<%= pattern.id %>">
+          (質問)  <%= pattern.question %>
+          <br >
+          (回答者数) <%= pattern.users.size %>人  
+        </a>
+      </li>
 
+    <% end %>
 
-
-
+  <ul>
 
 
 
