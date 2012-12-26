@@ -32,7 +32,7 @@ class Admin::LoginController < Admin::Base
       #名前とパスワードが一致したら、クッキーに保存する。
       cookies.signed[:admin_id] ={ value: @admin_user.id ,expires: 1.days.from_now }     
       #リダイレクトする。
-      redirect_to admin_top_index_path 
+
       return
     else
       
@@ -43,23 +43,6 @@ class Admin::LoginController < Admin::Base
 
 
   end
-
-  
-  def logout
-
-
-
-
-
-
-  end
-
-
-
-
-
-
-
 
 
 

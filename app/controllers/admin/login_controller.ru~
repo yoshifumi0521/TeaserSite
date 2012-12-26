@@ -44,23 +44,6 @@ class Admin::LoginController < Admin::Base
 
   end
 
-  
-  def logout
-
-
-
-
-
-
-  end
-
-
-
-
-
-
-
-
 
 
 

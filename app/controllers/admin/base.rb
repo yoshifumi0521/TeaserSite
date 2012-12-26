@@ -9,13 +9,14 @@ class Admin::Base < ApplicationController
   def authorize
     
     if cookies.signed[:admin_id]
-      @admin_user = Admin.find_by_id(cookies.signed[:user_id])
+      @admin_user = Admin.find_by_id(cookies.signed[:admin_id])
+      logger.debug(@admin_user.inspect)
       cookies.delete :user_id unless @admin_user
     end
   
   end
 
-  def before_filter
+  def login_required
     
     return raise Forbidden unless @admin_user
     
