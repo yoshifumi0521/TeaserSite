@@ -31,9 +31,8 @@ gem "client_side_validations"
 #日本語化
 gem "rails-i18n"
 
-
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0',require: "bcrypt"
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
