@@ -10,6 +10,16 @@ TeaserSite::Application.routes.draw do
   get "register/4",:controller => :registers, :action => :pattern4
   get "register/5",:controller => :registers, :action => :pattern5
   
+  namespace :admin do
+    
+    root to: "login#index"
+    put "login/auth"
+
+
+
+  end
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

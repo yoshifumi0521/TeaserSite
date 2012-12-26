@@ -1,0 +1,24 @@
+
+<div data-role="content">
+
+  <h1>管理画面ログインページ</h1>
+
+  <%= form_tag('/admin/login/auth',:method => :put) do %>
+   
+    <p>名前</p>
+    <%= text_field_tag :name %> 
+
+    <p>パスワード</p>
+    <%= text_field_tag :password %> 
+
+    <%= submit_tag "送信" %>
+  <% end %>
+
+
+
+</div>
+
+
+
+
+

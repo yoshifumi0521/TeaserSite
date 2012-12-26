@@ -8,7 +8,9 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script>
       $(document).bind('mobileinit', function(){
-      
+        $.mobile.ajaxEnabled = false; 
+        $.mobile.ajaxFormsEnabled = false;
+        $.mobile.linkBindingEnabled = false;
       
       })
     </script>
