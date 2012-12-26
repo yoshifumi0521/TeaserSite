@@ -15,7 +15,7 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
-app/controllers/admin
+app/controllers/admin/*
 
 
 
