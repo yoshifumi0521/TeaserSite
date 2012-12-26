@@ -5,9 +5,9 @@ class User < ActiveRecord::Base
   
   attr_accessible :answer, :email, :name,:pattern_id
 
-  validates :name, :presence => true 
+  validates :name, :presence => true
   validates :answer, :presence => true
-  validates :email, :presence => true, :uniqueness => true,:email_format => {:message => 'メールアドレスが正しくありません。'}
+  validates :email,:uniqueness => true,:email_format => {:message => 'が正しくありません。'}
 
 
 

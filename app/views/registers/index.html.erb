@@ -33,15 +33,33 @@
 
   <% end %>
 
+
+  <!-- ここにエラーメッセージ　-->
+  <% if flash[:error] %>
+    <ul>
+      <% flash[:error].each do |flash| %>
+        <li><span style="color: red"><%= flash %></span></li>
+      <% end %>
+    </ul>
+  <% end %>
+  
+  <!-- 登録うまくいったときのメッセージ表示　-->
+  <% if flash[:success] %>
+    <p><%= flash[:success] %></p>
+  <% end %>
+
   <!-- フォーム -->
-  <%= form_for @user  do |form| %>
+  <%= form_for @user, :html => {"data-ajax" => "false"} do |form| %>
 
     <!-- パターンをhiddenで送る。 -->
     <input type="hidden" name="pattern" value="<%= @pattern %>">
-
+    
     <%= form.label :answer,"質問に対する回答" %>
     <%= form.text_area :answer %>
   
+    <%= form.label :name,"名前" %>
+    <%= form.text_field :name %>
+    
     <%= form.label :email,"メールアドレス" %>
     <%= form.text_field :email %>
 

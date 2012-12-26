@@ -1,0 +1,13 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ja:
+  activerecord:
+    models:
+      user: 登録情報
+    attributes:
+      user:
+        name: 名前
+        email: メールアドレス
+        answer: 質問の答え
+

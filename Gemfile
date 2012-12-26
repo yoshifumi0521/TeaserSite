@@ -25,6 +25,13 @@ gem 'jquery-rails'
 #メールアドレスのバリデーションをやってくれる。
 gem "validates_email_format_of"
 
+#クライアントでバリデーションをやってくれるライブラリ
+gem "client_side_validations"
+
+#日本語化
+gem "rails-i18n"
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
