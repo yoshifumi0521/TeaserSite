@@ -1,10 +1,34 @@
 
 <div data-role="content">
 
+  <h1>(質問) <%= @pattern.question %> </h1>
+  <p>登録者数 <%= @users.size %></p>
+
+  <!-- 登録者がいなかった場合 -->
+  <% if @users.empty? %>
 
 
 
+  <!--　登録者がいた場合 -->
+  <% else %>
 
+    <table class="table">
+      <tr>
+        <th>名前</th>
+        <th>メールアドレス</th>
+        <th>答え</th>
+      </tr>
+
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= user.answer %></td>
+        </tr>
+      <% end %>
+    </table>
+
+  <% end %>
 
 
 
@@ -12,9 +36,6 @@
 
 
 </div>
-
-
-
 
 
 

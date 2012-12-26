@@ -1,7 +1,6 @@
 #coding: utf-8
 TeaserSite::Application.routes.draw do
  
-
   resources :users,only: [:create]
 
   #パターンのルーティング
