@@ -14,6 +14,7 @@ TeaserSite::Application.routes.draw do
     
     root to: "login#index"
     put "login/auth"
+    put "login/logout"
 
     resources :top,only: [:index]
 

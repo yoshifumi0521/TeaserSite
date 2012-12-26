@@ -47,9 +47,8 @@ class Admin::LoginController < Admin::Base
   
   def logout
 
-    cookies.delete :admin_id unless @admin_user    
     
-    return redirect_to :admin_root
+
 
 
 
